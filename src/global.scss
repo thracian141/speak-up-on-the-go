@@ -25,13 +25,79 @@
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
 
-/**
- * Ionic Dark Mode
- * -----------------------------------------------------
- * For more info, please see:
- * https://ionicframework.com/docs/theming/dark-mode
- */
 
-/* @import "@ionic/angular/css/palettes/dark.always.css"; */
-/* @import "@ionic/angular/css/palettes/dark.class.css"; */
-@import '@ionic/angular/css/palettes/dark.system.css';
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('./assets/font/noto-sans/NotoSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('./assets/font/noto-sans/NotoSans-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'boxicons';
+  src: url('./assets/font/boxicons/boxicons.woff2') format('woff2'),
+       url('./assets/font/boxicons/boxicons.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --ion-font-family: 'Noto Sans', sans-serif;
+  --ion-background-color: #080808;
+  --ion-background-color-tint: #0d0d0d;
+  --ion-text-color: #babecc;
+
+  --ion-color-primary: #9952c6;
+  --ion-color-primary-shade: #623d79;
+  --ion-color-primary-tint: #ac60db;
+
+  --ion-color-secondary: #4eabb9;
+  --ion-color-secondary-shade: #489ba8;
+  --ion-color-secondary-tint: #59bbca;
+
+  --ion-color-tertiary: #8482fb;
+  --ion-color-tertiary-shade: #7472dd;
+  --ion-color-tertiary-tint: #908ffb;
+
+  --ion-color-success: #2dd55b;
+  --ion-color-success-shade: #28bb50;
+  --ion-color-success-tint: #42d96b;
+  
+  --ion-color-warning: #ffce31;
+  --ion-color-warning-shade: #e0b52b;
+  --ion-color-warning-tint: #ffd346;
+
+  --ion-color-danger: #f24c58;
+  --ion-color-danger-shade: #d5434d;
+  --ion-color-danger-tint: #f35e69;
+
+  --ion-color-light: #222428;
+  --ion-color-light-shade: #1e2023;
+  --ion-color-light-tint: #383a3e;
+
+  --ion-color-medium: #989aa2;
+  --ion-color-medium-shade: #86888f;
+  --ion-color-medium-tint: #a2a4ab;
+
+  --ion-color-dark: #f4f5f8;
+  --ion-color-dark-rgb: 244, 245, 248;
+  --ion-color-dark-contrast: #000;
+
+  --ion-color-dark-contrast-rgb: 0, 0, 0;
+  --ion-color-dark-shade: #d7d8da;
+  --ion-color-dark-tint: #f5f6f9;
+}
+
+body {
+  font-family: var(--ion-font-family);
+  background-color: var(--ion-background-color);
+  color: var(--ion-text-color);
+}
+
