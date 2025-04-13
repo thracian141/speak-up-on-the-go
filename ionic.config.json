@@ -1,0 +1,7 @@
+{
+  "name": "speak-up-on-the-way",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
