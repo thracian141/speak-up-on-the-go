@@ -2,7 +2,7 @@ import type { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
   appId: 'io.ionic.starter',
-  appName: 'speak-up-on-the-way',
+  appName: 'speak-up-on-the-go',
   webDir: 'www'
 };
 
