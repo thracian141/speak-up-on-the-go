@@ -1,13 +1,13 @@
 <ion-app>
   <app-navbar>
-    <ion-button fill="clear" color="primary" shape="round" slot="start" style="font-size: 1.5em; aspect-ratio: 1;">
-      <i class="bx bx-menu"></i>
+    <ion-button fill="clear" color="primary" shape="round" slot="start" style="font-size: 1.5em; aspect-ratio: 1;" [routerLink]="['/home']">
+      <i class='bx bxs-home' ></i>
     </ion-button>
 
     <ion-img src="assets/image/logothing.png" slot="middle" style="height: 100%; width: 100%;"></ion-img>
   </app-navbar>
 
-  <ion-content >
+  <ion-content>
     <ion-router-outlet></ion-router-outlet>
   </ion-content>
 </ion-app>

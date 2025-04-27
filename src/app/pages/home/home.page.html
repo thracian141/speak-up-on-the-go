@@ -1,14 +1,14 @@
-<ion-content [fullscreen]="true">
+<ion-content>
   <div class="grid">
     <div class="row">
       <div class="column">
         <ion-button fill="clear" expand="full" color="secondary">
-          <ion-label><i class='bx bxs-package' style="color: var(--ion-color-secondary);"></i>Decks</ion-label>
+          <ion-label><i class='bx bxs-flag-alt' style="color: var(--ion-color-secondary);"></i>Goals</ion-label>
         </ion-button>
       </div>
       <div class="column">
-        <ion-button fill="clear" expand="full">
-          <ion-label><i class='bx bxs-flag-alt' style="color: var(--ion-color-primary);"></i>Goals</ion-label>
+        <ion-button fill="clear" expand="full" [routerLink]="['/decks']">
+          <ion-label><i class='bx bxs-package' style="color: var(--ion-color-primary);"></i>Decks</ion-label>
         </ion-button>
       </div>
     </div>

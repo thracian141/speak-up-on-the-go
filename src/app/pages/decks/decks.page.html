@@ -1,0 +1,29 @@
+<ion-content [scrollY]="false">
+  <ion-card color="dark" class="buttons-card">
+    <ion-card-header>
+      <ion-label style="font-size: 20px;">Decks</ion-label>
+      <ion-buttons>
+        <ion-button color="light" fill="solid" class="translation-card-button">
+          <i class='bx bx-stats' style="font-size: 2em; color: var(--ion-text-color);"></i>
+        </ion-button>
+        <ion-button color="light" fill="solid" class="translation-card-button">
+          <i class='bx bx-search' style="font-size: 1.8em; color: var(--ion-text-color); margin-top: 2px;"></i>
+        </ion-button>
+        <ion-button color="light" fill="solid" class="translation-card-button">
+          <i class='bx bx-plus' style="font-size: 2em; color: var(--ion-text-color);"></i>
+        </ion-button>
+      </ion-buttons>
+    </ion-card-header>
+  </ion-card>
+  
+  <div class="deck-list">
+    <ion-item color="dark" class="deck-card" button *ngFor="let deck of decks">
+      <div class="deck-header">
+        <ion-label>{{deck.name}}</ion-label>
+      </div>
+      <div class="deck-content">
+        <p>{{deck.description}}</p>
+      </div>
+    </ion-item>
+  </div>
+</ion-content>
