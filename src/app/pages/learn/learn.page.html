@@ -1,0 +1,64 @@
+<ion-content>
+  <ion-card color="dark" class="session-counter-card">
+    <div class="session-counter-elements-container">
+      <p class="session-counter-label">2/50</p>
+      <div class="session-counter-bar">
+        <div class="session-counter-bar-fill"></div>
+      </div>
+    </div>
+    <ion-button fill="clear" color="primary" shape="round">
+      <i class='bx bx-dots-vertical'></i>
+    </ion-button>
+  </ion-card>
+
+  <ion-card color="dark" class="answer-card">
+    <ion-card-header>
+      <div class="level-boxes-bar">
+        <div class="one-level-box active"></div>
+        <div class="one-level-box active"></div>
+        <div class="one-level-box"></div>
+        <div class="one-level-box"></div>
+        <div class="one-level-box"></div>
+      </div>
+      <ion-label color="warning">New word!</ion-label>
+    </ion-card-header>
+    <ion-card-content>
+      <div class="answer-container">
+        <span class="answer-sentence first">Ich möchte </span>
+        <ion-input color="secondary" [ngStyle]="{'width': calculateAnswerInputWidth()}"></ion-input>
+        <span class="answer-sentence last">, wie du das gemacht hast.</span>
+      </div>
+      <ion-item class="extra-info-container" color="light">
+        <i class='bx bx-run' style="font-size: 1.5em; margin-right: 12px;"></i>
+        <ion-label class="extra-info-label">verb</ion-label>
+        <ion-button shape="round" fill="clear">
+          <i class='bx bx-chevron-right' style="font-size: 2.6em; color: var(--ion-text-color);"></i>
+        </ion-button>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card color="dark" class="translation-card">
+    <ion-card-header>
+      <ion-label>to know</ion-label>
+      <ion-button fill="clear" shape="round" color="primary" class="translation-card-button">
+        <i class='bx bx-chevron-up' style="font-size: 2.4em; color: var(--ion-text-color);"></i>
+      </ion-button>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-label>
+        I want to know how you did that.
+      </ion-label>
+    </ion-card-content>
+
+  </ion-card>
+</ion-content>
+
+<ion-footer>
+  <ion-button fill="clear" shape="round" class="extra-characters-button">
+    Öş
+  </ion-button>
+  <ion-button fill="clear" shape="round" class="next-button">
+    <i class='bx bx-microphone' style="font-size: 2.2em; color: var(--ion-text-color);"></i>
+  </ion-button>
+</ion-footer>

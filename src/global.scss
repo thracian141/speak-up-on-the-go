@@ -41,6 +41,20 @@
 }
 
 @font-face {
+  font-family: 'Noto Serif';
+  src: url('./assets/font/noto-serif/NotoSerif-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Noto Serif';
+  src: url('./assets/font/noto-serif/NotoSerif-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'boxicons';
   src: url('./assets/font/boxicons/boxicons.woff2') format('woff2'),
        url('./assets/font/boxicons/boxicons.woff') format('woff');
@@ -50,7 +64,9 @@
 
 :root {
   --ion-font-family: 'Noto Sans', sans-serif;
-  --ion-background-color: #080808;
+  --ion-font-family-important: 'Noto Serif', serif;
+  
+  --ion-background-color: #0a090a;
   --ion-background-color-tint: #0d0d0d;
   --ion-text-color: #babecc;
 
@@ -70,29 +86,30 @@
   --ion-color-success-shade: #28bb50;
   --ion-color-success-tint: #42d96b;
   
-  --ion-color-warning: #ffce31;
-  --ion-color-warning-shade: #e0b52b;
-  --ion-color-warning-tint: #ffd346;
+  --ion-color-warning: #d3a965;
+  --ion-color-warning-shade: #c19856;
+  --ion-color-warning-tint: #e0b775;
 
   --ion-color-danger: #f24c58;
   --ion-color-danger-shade: #d5434d;
   --ion-color-danger-tint: #f35e69;
 
-  --ion-color-light: #222428;
+  --ion-color-light: #292035;
   --ion-color-light-shade: #1e2023;
   --ion-color-light-tint: #383a3e;
+  --ion-color-light-contrast: #babecc;
+  --ion-color-light-contrast-rgb: 186, 190, 204;
 
-  --ion-color-medium: #989aa2;
-  --ion-color-medium-shade: #86888f;
-  --ion-color-medium-tint: #a2a4ab;
+  --ion-color-medium: #1d1724;
+  --ion-color-medium-shade: #15111c;
+  --ion-color-medium-tint: #1e2023;
 
-  --ion-color-dark: #f4f5f8;
-  --ion-color-dark-rgb: 244, 245, 248;
-  --ion-color-dark-contrast: #000;
-
-  --ion-color-dark-contrast-rgb: 0, 0, 0;
-  --ion-color-dark-shade: #d7d8da;
-  --ion-color-dark-tint: #f5f6f9;
+  --ion-color-dark: #0f0c14;
+  --ion-color-dark-rgb: 15, 12, 20;
+  --ion-color-dark-contrast: #babecc;
+  --ion-color-dark-contrast-rgb: 186, 190, 204;
+  --ion-color-dark-shade: #0c0910;
+  --ion-color-dark-tint: #15111c;
 }
 
 body {
